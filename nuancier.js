@@ -4,7 +4,7 @@ const del = document.getElementById("delete");
 let squareNumber = 1;
 
 
-function updateSquares() {
+function drawSquare() {
     // Vider l'élément nuancier avant de rajouter les nouveaux carrés
     nuancier.innerHTML = "";
 
@@ -20,18 +20,18 @@ function updateSquares() {
 add.addEventListener("click", (e) => {
     e.preventDefault()
     squareNumber++;
-    updateSquares();  
+    drawSquare();  
 });
 
 del.addEventListener("click", (e) => {
     e.preventDefault()
     if (squareNumber > 0) {
         squareNumber--;
-        updateSquares();  
+        drawSquare();  
     }
 });
 
 
-updateSquares();
+drawSquare();
 
 console.log(squareNumber); 
