@@ -35,7 +35,7 @@ function drawSquare() {
 
     setColor(square, red, green, blue);
 
-    const opacity = i === 0 ? 1 : 1 / (i + 1);
+    const opacity = i === 0 ? 1 : 1 - 0.1 * (i + 1);
     square.style.opacity = opacity;
 
     nuancier.appendChild(square);
@@ -59,3 +59,5 @@ del.addEventListener("click", (e) => {
 });
 
 drawSquare();
+
+

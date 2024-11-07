@@ -9,9 +9,7 @@
 
   <body>
     <div class="container">
-      <div id="nuancier">
-        
-      </div>
+      <div id="nuancier"></div>
       <form class="options">
         <div class="color-chose">
           <input id="red" type="text" placeholder="Red" />
@@ -19,11 +17,102 @@
           <input id="blue" type="text" placeholder="Blue" />
         </div>
         <div class="buttons">
-          <button id="add">Add</button>
-          <button id="delete">delete</button>
+          <button  style="background-color: #66c1ba;" id="add">Add Nuances</button>
+          <button style="background-color: #f66455;" id="delete">Delete</button>
         </div>
       </form>
+      <div class="acordeon">
+        <div class="top">
+          <h1>Frequently Asked Question</h1>
+          <div id="closeAcord">
+            <img  style="width: 30px;" src="/chevron-up-svgrepo-com.svg" alt="" />
+          </div>
+        </div>
+        <div class="box-container">
+         
+        </div>
+      </div>
+    </div>
+    <div class="layer-blur">
+      <div class="layer" id="layer"></div>
+      <div class="plan">
+        <div class="inner">
+          <span class="pricing">
+            <img
+              id="closeMenu"
+              style="width: 20px; cursor: pointer"
+              src="/close-svgrepo-com.svg"
+              alt=""
+            />
+          </span>
+          <p class="title">Color Chart</p>
+          <p class="info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <ul class="features">
+            <li>
+              <span class="icon">
+                <svg
+                  height="24"
+                  width="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    fill="currentColor"
+                    d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"
+                  ></path>
+                </svg>
+              </span>
+              <span> Lorem ipsum dolor sit</span>
+            </li>
+            <li>
+              <span class="icon">
+                <svg
+                  height="24"
+                  width="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    fill="currentColor"
+                    d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"
+                  ></path>
+                </svg>
+              </span>
+              <span> Lorem ipsum dolor sit</span>
+            </li>
+            <li>
+              <span class="icon">
+                <svg
+                  height="24"
+                  width="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    fill="currentColor"
+                    d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"
+                  ></path>
+                </svg>
+              </span>
+              <span> Lorem ipsum dolor sit</span>
+            </li>
+          </ul>
+          <div class="action">
+            <a class="button" href="#" id="create"> Create a Colour chart </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="action" id="openMenu">
+      <p class="button" href="#">Chart color Menu</p>
     </div>
     <script src="nuancier.js"></script>
+    <script src="poppup.js"></script>
+    <script src="acordeon.js"></script>
   </body>
 </html>
